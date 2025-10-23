@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail, Phone, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -6,13 +5,20 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Certificates", path: "/certificates" },
-    { name: "Testimonials", path: "/testimonials" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", anchor: "#home" },
+    { name: "About", anchor: "#about" },
+    { name: "Portfolio", anchor: "#portfolio" },
+    { name: "Certificates", anchor: "#certificates" },
+    { name: "Testimonials", anchor: "#testimonials" },
+    { name: "Contact", anchor: "#contact" },
   ];
+
+  const scrollToSection = (anchor: string) => {
+    const element = document.querySelector(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
@@ -47,13 +53,14 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {navLinks.slice(0, 4).map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                <li key={link.anchor}>
+                  <a
+                    href={link.anchor}
+                    onClick={(e) => { e.preventDefault(); scrollToSection(link.anchor); }}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -64,13 +71,14 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">More</h3>
             <ul className="space-y-2">
               {navLinks.slice(4).map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                <li key={link.anchor}>
+                  <a
+                    href={link.anchor}
+                    onClick={(e) => { e.preventDefault(); scrollToSection(link.anchor); }}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
