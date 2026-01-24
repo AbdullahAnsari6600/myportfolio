@@ -39,6 +39,129 @@
       "description": "Clear communication, timely delivery, and ongoing support to ensure project success"
     }
   },
+  "clientReviews": {
+    "title": "What Clients",
+    "titleHighlight": "Say",
+    "subtitle": "Trusted by businesses across GCC for quality web development",
+    "viewAll": "View All Testimonials",
+    "reviews": [
+      {
+        "text": "Abdullah delivered a clean, professional website that perfectly represents our contracting business in Saudi Arabia. Communication was clear and the delivery was on time.",
+        "role": "Project Manager",
+        "company": "Contracting Company",
+        "country": "KSA"
+      },
+      {
+        "text": "Highly reliable and technically strong. The website performance and structure exceeded our expectations.",
+        "role": "Operations Head",
+        "company": "Manpower Supply Company",
+        "country": "UAE"
+      },
+      {
+        "text": "Understood our business requirements clearly and translated them into a modern, functional website.",
+        "role": "Director",
+        "company": "Tour & Travel Agency",
+        "country": "GCC"
+      }
+    ]
+  },
+  "workProcess": {
+    "title": "My Work",
+    "titleHighlight": "Process",
+    "subtitle": "A structured approach ensuring quality delivery at every stage",
+    "steps": [
+      {
+        "title": "Requirement Understanding",
+        "description": "Deep discussion of business goals, audience, and GCC compliance needs"
+      },
+      {
+        "title": "Planning & UI Structure",
+        "description": "Sitemap, wireframes, and content flow design"
+      },
+      {
+        "title": "Design & Development",
+        "description": "Clean UI, responsive layouts, secure backend implementation"
+      },
+      {
+        "title": "Testing & Optimization",
+        "description": "Performance, security, and mobile responsiveness testing"
+      },
+      {
+        "title": "Launch & Support",
+        "description": "Deployment, documentation, and post-launch support"
+      }
+    ]
+  },
+  "industries": {
+    "title": "Industries",
+    "titleHighlight": "Served",
+    "subtitle": "Delivering tailored solutions across diverse business sectors",
+    "list": [
+      { "icon": "building", "name": "Contracting & Construction Companies" },
+      { "icon": "users", "name": "Manpower Supply & HR Firms" },
+      { "icon": "plane", "name": "Tour & Travel Agencies" },
+      { "icon": "briefcase", "name": "Corporate & Trading Companies" },
+      { "icon": "file-text", "name": "Service-Based Businesses" }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications &",
+    "titleHighlight": "Recognitions",
+    "subtitle": "Professional certifications and project completions from industry leaders",
+    "viewAll": "View All Certifications"
+  },
+  "solutions": {
+    "title": "Complete Digital &",
+    "titleHighlight": "Business Identity Solutions",
+    "subtitle": "Not just websites — comprehensive digital and branding identity solutions for your business",
+    "description": "I provide end-to-end digital solutions that help businesses establish a strong online presence and professional brand identity."
+  },
+  "branding": {
+    "title": "Business Branding &",
+    "titleHighlight": "Identity Packages",
+    "subtitle": "Complete corporate identity solutions for professional businesses",
+    "note": "Services offered standalone or as part of website + branding package",
+    "items": [
+      { "icon": "palette", "name": "Logo Design" },
+      { "icon": "file", "name": "Letterheads & Business Cards" },
+      { "icon": "stamp", "name": "Company Stamps & Seals" },
+      { "icon": "receipt", "name": "Invoices & Quotation Templates" },
+      { "icon": "layers", "name": "Complete Corporate Identity" }
+    ]
+  },
+  "maintenance": {
+    "title": "Website Maintenance &",
+    "titleHighlight": "Ongoing Support",
+    "subtitle": "Continuous support to keep your website running smoothly",
+    "keyLine": "Clients are not left after delivery — I support and maintain web applications as business requirements grow.",
+    "items": [
+      "Content updates & page modifications",
+      "Feature enhancements & UI improvements",
+      "Bug fixes & performance optimization",
+      "Security updates & backups",
+      "Support for future business expansions"
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "titleHighlight": "Offered",
+    "subtitle": "Comprehensive web development and branding solutions",
+    "list": [
+      {
+        "title": "Website Design & Development",
+        "description": "Corporate, contracting, manpower, travel websites with modern, responsive designs"
+      },
+      {
+        "title": "Branding & Corporate Identity",
+        "description": "Logos, letterheads, stamps, complete identity packages for professional businesses"
+      },
+      {
+        "title": "Maintenance & Support",
+        "description": "Ongoing updates, feature enhancements, and dedicated technical support"
+      }
+    ]
+  },
+  "trustLine": "One partner for your website, branding, and long-term digital growth.",
   "about": {
     "title": "About",
     "titleHighlight": "Me",
