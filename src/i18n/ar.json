@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عني",
+    "portfolio": "أعمالي",
+    "certificates": "الشهادات",
+    "testimonials": "آراء العملاء",
+    "contact": "تواصل معي",
+    "downloadCV": "تحميل السيرة الذاتية"
+  },
+  "hero": {
+    "available": "متاح لمشاريع جديدة",
+    "name": "عبدالله أشرف أنصاري",
+    "title": "مطور ويب متكامل",
+    "intro": "أساعد الشركات في دول الخليج على تحويل أفكارها إلى تطبيقات ويب متجاوبة وقابلة للتوسع وآمنة. خبرة في التطوير المتكامل مع MERN والتقنيات الحديثة.",
+    "viewWork": "شاهد أعمالي",
+    "getInTouch": "تواصل معي"
+  },
+  "stats": {
+    "projectsCompleted": "مشاريع منجزة",
+    "happyClients": "عملاء سعداء",
+    "certifications": "شهادات",
+    "yearsExperience": "سنوات الخبرة"
+  },
+  "whyChooseMe": {
+    "title": "لماذا",
+    "titleHighlight": "تختارني",
+    "subtitle": "تقديم التميز في كل مشروع باستخدام التقنيات الحديثة وأفضل الممارسات",
+    "gccExpertise": {
+      "title": "خبرة في أسواق الخليج",
+      "description": "فهم عميق لاحتياجات الأعمال الإقليمية والسياق الثقافي في المملكة العربية السعودية ودول الخليج"
+    },
+    "techStack": {
+      "title": "تقنيات حديثة",
+      "description": "إتقان MERN و React و Node.js و TypeScript وأحدث تقنيات الويب"
+    },
+    "clientFocused": {
+      "title": "التركيز على العميل",
+      "description": "تواصل واضح، تسليم في الوقت المحدد، ودعم مستمر لضمان نجاح المشروع"
+    }
+  },
+  "about": {
+    "title": "عن",
+    "titleHighlight": "نفسي",
+    "subtitle": "مطور شغوف بمهمة بناء حلول رقمية تصنع الفرق",
+    "professionalBackground": "الخلفية المهنية",
+    "bio1": "أنا عبدالله أشرف أنصاري، مطور ويب متكامل شغوف بأكثر من 5 سنوات من الخبرة في بناء تطبيقات الويب الحديثة. كانت رحلتي في تطوير البرمجيات مدفوعة بالالتزام بالتميز والفهم العميق للاحتياجات التقنية والتجارية.",
+    "bio2": "مقيم في منطقة الخليج، وقد حظيت بشرف العمل مع عملاء متنوعين في المملكة العربية السعودية والإمارات ودول الخليج الأخرى. منحتني هذه التجربة رؤى فريدة حول ديناميكيات السوق الإقليمية والفروق الثقافية الضرورية لتسليم المشاريع بنجاح.",
+    "bio3": "أتخصص في MERN stack (MongoDB, Express.js, React, Node.js) وتقنيات الويب الحديثة. يجمع نهجي بين ممارسات الكود النظيف والهندسة المعمارية القابلة للتوسع والتصميم المرتكز على المستخدم لإنشاء تطبيقات ليست فقط وظيفية بل استثنائية حقًا.",
+    "technicalExpertise": "الخبرة التقنية",
+    "frontend": "الواجهة الأمامية",
+    "backend": "الخلفية",
+    "toolsOthers": "الأدوات وأخرى",
+    "softSkills": "المهارات الشخصية والقيم",
+    "communication": {
+      "title": "التواصل",
+      "description": "تواصل واضح وفعال مع العملاء بالإنجليزية والعربية"
+    },
+    "teamwork": {
+      "title": "العمل الجماعي",
+      "description": "نهج تعاوني لحل المشكلات وتسليم المشاريع"
+    },
+    "projectManagement": {
+      "title": "إدارة المشاريع",
+      "description": "سير عمل منظم مع التسليم في الوقت المحدد وضمان الجودة"
+    },
+    "badges": {
+      "responsiveDesign": "تصميم متجاوب",
+      "apiDevelopment": "تطوير API",
+      "databaseDesign": "تصميم قواعد البيانات",
+      "uiuxImplementation": "تنفيذ UI/UX",
+      "performanceOptimization": "تحسين الأداء",
+      "securityBestPractices": "أفضل ممارسات الأمان"
+    },
+    "personalInfo": {
+      "title": "المعلومات الشخصية",
+      "fullName": "الاسم الكامل",
+      "fullNameValue": "عبدالله أشرف أنصاري",
+      "designation": "المسمى الوظيفي",
+      "designationValue": "مطور ويب متكامل أول",
+      "experience": "الخبرة",
+      "experienceValue": "أكثر من 5 سنوات",
+      "location": "الموقع",
+      "locationValue": "المملكة العربية السعودية، الخليج",
+      "languages": "اللغات",
+      "languagesValue": "الإنجليزية، العربية، الأردية، الهندية",
+      "availability": "التوفر",
+      "availabilityValue": "متاح للمشاريع"
+    }
+  },
+  "portfolio": {
+    "title": "معرض",
+    "titleHighlight": "أعمالي",
+    "subtitle": "عرض للمشاريع الناجحة التي تم تسليمها للعملاء في أسواق الخليج",
+    "allProjects": "جميع المشاريع",
+    "ecommerce": "التجارة الإلكترونية",
+    "corporate": "الشركات",
+    "healthcare": "الرعاية الصحية",
+    "realEstate": "العقارات",
+    "logistics": "الخدمات اللوجستية",
+    "education": "التعليم",
+    "verified": "موثق",
+    "viewLive": "عرض مباشر"
+  },
+  "certificates": {
+    "title": "الشهادات و",
+    "titleHighlight": "الإنجازات",
+    "subtitle": "الشهادات المهنية وإتمام المشاريع والتقديرات من قادة الصناعة",
+    "totalCertificates": "إجمالي الشهادات",
+    "technicalCerts": "شهادات تقنية",
+    "projectCompletions": "إتمام المشاريع",
+    "yearsValidated": "سنوات موثقة",
+    "downloadPDF": "تحميل PDF"
+  },
+  "testimonials": {
+    "title": "آراء",
+    "titleHighlight": "العملاء",
+    "subtitle": "اسمع ما يقوله العملاء والشركاء في دول الخليج عن العمل معي",
+    "happyClients": "عملاء سعداء",
+    "fiveStarReviews": "تقييمات 5 نجوم",
+    "repeatClients": "عملاء متكررون",
+    "avgRating": "متوسط التقييم"
+  },
+  "contact": {
+    "title": "تواصل",
+    "titleHighlight": "معي",
+    "subtitle": "لديك مشروع في ذهنك؟ دعنا نناقش كيف يمكنني المساعدة في تحقيق أفكارك",
+    "contactInfo": "معلومات التواصل",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "location": "الموقع",
+    "connectWithMe": "تواصل معي",
+    "availableForProjects": "متاح للمشاريع",
+    "availableNote": "أقبل حاليًا مشاريع عملاء جديدة. وقت الاستجابة المتوقع: 24-48 ساعة.",
+    "sendMessage": "أرسل لي رسالة",
+    "yourName": "اسمك",
+    "emailAddress": "البريد الإلكتروني",
+    "yourMessage": "رسالتك",
+    "namePlaceholder": "محمد أحمد",
+    "emailPlaceholder": "mohamed@example.com",
+    "messagePlaceholder": "أخبرني عن مشروعك...",
+    "sendBtn": "إرسال الرسالة",
+    "responseTime": "متوسط وقت الاستجابة",
+    "satisfactionRate": "نسبة رضا العملاء"
+  },
+  "footer": {
+    "description": "مطور ويب متكامل متخصص في بناء تجارب رقمية استثنائية في أسواق الخليج.",
+    "downloadResume": "تحميل السيرة الذاتية",
+    "quickLinks": "روابط سريعة",
+    "more": "المزيد",
+    "contact": "التواصل",
+    "rights": "جميع الحقوق محفوظة."
+  },
+  "toast": {
+    "missingInfo": "معلومات ناقصة",
+    "fillAllFields": "يرجى ملء جميع الحقول قبل الإرسال.",
+    "messageSent": "تم إرسال الرسالة!",
+    "thankYou": "شكرًا لتواصلك. سأرد عليك قريبًا."
+  }
+}

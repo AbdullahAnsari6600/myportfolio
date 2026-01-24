@@ -1,24 +1,20 @@
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Github, Linkedin, Mail, Phone, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   const navLinks = [
-    { name: "Home", anchor: "#home" },
-    { name: "About", anchor: "#about" },
-    { name: "Portfolio", anchor: "#portfolio" },
-    { name: "Certificates", anchor: "#certificates" },
-    { name: "Testimonials", anchor: "#testimonials" },
-    { name: "Contact", anchor: "#contact" },
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.about"), path: "/about" },
+    { name: t("nav.portfolio"), path: "/portfolio" },
+    { name: t("nav.certificates"), path: "/certificates" },
+    { name: t("nav.testimonials"), path: "/testimonials" },
+    { name: t("nav.contact"), path: "/contact" },
   ];
-
-  const scrollToSection = (anchor: string) => {
-    const element = document.querySelector(anchor);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
 
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
@@ -39,28 +35,26 @@ const Footer = () => {
               <span className="font-bold text-lg">Abdullah Ansari</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Fullstack Developer specializing in building exceptional digital experiences
-              across GCC markets.
+              {t("footer.description")}
             </p>
             <Button variant="outline" size="sm">
-              <Download className="w-4 h-4 mr-2" />
-              Download Resume
+              <Download className="w-4 h-4 me-2" />
+              {t("footer.downloadResume")}
             </Button>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4">{t("footer.quickLinks")}</h3>
             <ul className="space-y-2">
               {navLinks.slice(0, 4).map((link) => (
-                <li key={link.anchor}>
-                  <a
-                    href={link.anchor}
-                    onClick={(e) => { e.preventDefault(); scrollToSection(link.anchor); }}
+                <li key={link.path}>
+                  <Link
+                    to={link.path}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -68,17 +62,16 @@ const Footer = () => {
 
           {/* More Links */}
           <div>
-            <h3 className="font-semibold mb-4">More</h3>
+            <h3 className="font-semibold mb-4">{t("footer.more")}</h3>
             <ul className="space-y-2">
               {navLinks.slice(4).map((link) => (
-                <li key={link.anchor}>
-                  <a
-                    href={link.anchor}
-                    onClick={(e) => { e.preventDefault(); scrollToSection(link.anchor); }}
+                <li key={link.path}>
+                  <Link
+                    to={link.path}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -86,7 +79,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
@@ -108,7 +101,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Abdullah Ashraf Ansari. All rights reserved.
+              © {currentYear} Abdullah Ashraf Ansari. {t("footer.rights")}
             </p>
             <div className="flex items-center space-x-4">
               {socialLinks.map((social) => (
