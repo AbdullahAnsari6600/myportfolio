@@ -12,92 +12,90 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform - Al-Faisal Group",
-      category: "ecommerce",
-      company: "Al-Faisal Trading LLC",
+      title: "Construction Company",
+      category: "construction",
+      company: "Advanced Reforms Company",
       description:
-        "Built a comprehensive e-commerce platform with Arabic/English support, payment gateway integration, and inventory management for a leading Saudi retail company.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+        "Constructed a responsive web application for a construction company, including Arabic/English support.",
+      technologies: ["React", "Node.js", "Javascript", "CSS","TypeScript"],
       impact: "Increased online sales by 180% in first 6 months",
       verified: true,
-      link: "#",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+      link: "https://www.arc-ksa.com",
+      image: "/1.jpg",
     },
     {
       id: 2,
-      title: "Corporate Website - Emirates Consulting",
-      category: "corporate",
-      company: "Emirates Business Consultants",
+      title: "Contracting Company",
+      category: "contracting",
+      company: "HBR-WORLD Company Ltd.",
       description:
-        "Developed a modern, multilingual corporate website with CMS integration for content management and lead generation forms.",
+        "Developed a responsive international website for HBR Company, supporting multiple languages to cater to global users.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
       impact: "40% increase in qualified leads",
       verified: true,
-      link: "#",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      link: "https://www.hbr-world.com",
+      image: "/2.jpg",
     },
     {
       id: 3,
-      title: "Healthcare Portal - Riyadh Medical Center",
-      category: "healthcare",
-      company: "Riyadh Medical Services",
+      title: "Civil Maintenance",
+      category: "maintenance",
+      company: "First Ocean Est.",
       description:
-        "Created a patient management system with appointment booking, medical records, and telemedicine features compliant with local regulations.",
-      technologies: ["React", "Express", "PostgreSQL", "WebRTC"],
-      impact: "Streamlined operations for 10,000+ patients",
+        "Constructed a responsive web application for First Ocean Est., showcasing their maintenance services across various civil construction.",
+      technologies: ["React", "Express", "Node", "JavaScript","CSS"],
+      impact: "Streamlined operations for various needs",
       verified: true,
-      link: "#",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+      link: "https://www.firstom.com",
+      image: "/3.jpg",
     },
     {
       id: 4,
-      title: "Real Estate Platform - Dubai Properties",
-      category: "realestate",
-      company: "Dubai Property Solutions",
+      title: "Travels and Tourism",
+      category: "travels",
+      company: "Jannat Travels and Tourism",
       description:
-        "Developed a property listing platform with virtual tours, advanced search filters, and agent dashboard for Dubai real estate market.",
-      technologies: ["React", "Node.js", "MongoDB", "AWS S3"],
-      impact: "Listed 500+ properties, 2000+ active users",
+        "Web application for Jannat Travels & Tourism, featuring various Umrah packages, tour management, and a user-friendly booking experience.",
+      technologies: ["React", "Node.js", "HTML", "JavaScript"],
+      impact: "Listed local and international Umrah packages with a seamless booking experience.",
       verified: false,
-      link: "#",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+      link: "https://www.jannattravelsandtours.com",
+      image: "/4.jpg",
     },
     {
       id: 5,
-      title: "Logistics Dashboard - Gulf Freight Services",
-      category: "logistics",
-      company: "Gulf Shipping & Logistics",
+      title: "Construction Company",
+      category: "construction",
+      company: "Vertex Builders Company",
       description:
-        "Built a real-time shipment tracking and management dashboard with analytics for logistics operations across GCC.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      impact: "Reduced tracking time by 60%",
+        "Developed a responsive web application for Vertex, a civil construction company, to showcase projects, services, and company information effectively.",
+      technologies: ["React", "Node.js", "CSS", "HTML", "JavaScript"],
+      impact: "Created an interactive and informative platform for clients and partners.",
       verified: true,
-      link: "#",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+      link: "https://www.vertexbcc.com",
+      image: "/5.jpg",
     },
     {
       id: 6,
-      title: "Educational Platform - Arab Academy",
-      category: "education",
-      company: "Arab Online Academy",
+      title: "Contracting Company",
+      category: "contracting",
+      company: "Flow Limted Company",
       description:
-        "Developed an e-learning platform with video courses, quizzes, progress tracking, and certification system.",
-      technologies: ["Next.js", "Express", "PostgreSQL", "Stripe"],
-      impact: "10,000+ enrolled students",
+        "Developed a comprehensive website for a contracting company in Riyadh, showcasing services, ongoing projects, and client testimonials.",
+      technologies: ["Next.js", "Express", "CSS", "HTML","TypeScript"],
+      impact: "Improved online visibility",
       verified: false,
-      link: "#",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
+      link: "https://www.flowltd-ksa.com",
+      image: "/6.jpg",
     },
   ];
 
   const categories = [
     { id: "all", name: t("portfolio.allProjects") },
-    { id: "ecommerce", name: t("portfolio.ecommerce") },
-    { id: "corporate", name: t("portfolio.corporate") },
-    { id: "healthcare", name: t("portfolio.healthcare") },
-    { id: "realestate", name: t("portfolio.realEstate") },
-    { id: "logistics", name: t("portfolio.logistics") },
-    { id: "education", name: t("portfolio.education") },
+    { id: "construction", name: t("portfolio.construction") },
+    { id: "contracting", name: t("portfolio.contracting") },
+    { id: "maintenance", name: t("portfolio.maintenance") },
+    { id: "travels", name: t("portfolio.travels") },
   ];
 
   const filteredProjects =
@@ -133,11 +131,12 @@ const Portfolio = () => {
             {filteredProjects.map((project, idx) => (
               <Card key={project.id} className="overflow-hidden hover-lift animate-scale-in" style={{ animationDelay: `${idx * 0.1}s` }}>
                 <div className="relative h-48 overflow-hidden bg-muted">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                  />
+                <img
+  src={project.image}
+  alt={project.title}
+  className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
+/>
+
                   {project.verified && (
                     <div className="absolute top-3 end-3 bg-secondary text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center space-x-1">
                       <Award className="w-3 h-3" />
@@ -164,14 +163,14 @@ const Portfolio = () => {
                   </div>
 
                   <div className="flex items-center space-x-2">
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <ExternalLink className="w-4 h-4 me-2" />
-                      {t("portfolio.viewLive")}
-                    </Button>
-                    <Button size="sm" variant="ghost">
-                      <Github className="w-4 h-4" />
-                    </Button>
-                  </div>
+  <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex-1">
+    <Button size="sm" variant="outline" className="w-full flex items-center justify-center">
+      <ExternalLink className="w-4 h-4 me-2" />
+      {t("portfolio.viewLive")}
+    </Button>
+  </a>
+</div>
+
                 </div>
               </Card>
             ))}

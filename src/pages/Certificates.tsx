@@ -10,57 +10,63 @@ const Certificates = () => {
   const certificates = [
     {
       id: 1,
-      title: "Project Completion Certificate - Al-Faisal Group",
+      title: "Project Completion Certificate - HBR-WORLD LIMITED CO.",
       type: "project",
-      issuer: "Al-Faisal Trading LLC",
-      date: "March 2024",
-      description: "Certificate of successful completion of e-commerce platform development project",
+      issuer: "HBR-WORLD LIMITED CO.",
+      date: "January 2026",
+      description: "Certificate of Successful Completion of a Multilingual Website for a Contracting Company",
       verified: true,
-    },
+      file: "/certificates/hbr.pdf"
+    },    
     {
       id: 2,
-      title: "CompTIA Security+ Certification",
-      type: "technical",
-      issuer: "CompTIA",
-      date: "January 2024",
-      description: "Industry-recognized certification for cybersecurity fundamentals",
+      title: "Project Completion Certificate - Flow Company Ltd.",
+      type: "business",
+      issuer: "Flow Company Ltd.",
+      date: "October 2025",
+      description: "Certificate of Successful Completion for the Design and Deployment of a Multilingual Website for Flow Company Ltd",
       verified: true,
+    file: "/certificates/flow.pdf", 
     },
     {
       id: 3,
-      title: "AWS Certified Developer - Associate",
-      type: "technical",
-      issuer: "Amazon Web Services",
-      date: "November 2023",
-      description: "Cloud development and deployment expertise on AWS platform",
+      title: "Project Completion Certificate - Advanced Reforms Company",
+      type: "project",
+      issuer: "Advanced Reforms Company",
+      date: "January 2026",
+      description: "Certificate of Successful Completion for the Complete Design and Development of a Responsive Business Website with Backend for Advanced Reforms Company",
       verified: true,
+    file: "/certificates/arc.pdf", 
     },
     {
       id: 4,
-      title: "Employment Certificate - Emirates Consulting",
-      type: "employment",
-      issuer: "Emirates Business Consultants",
-      date: "September 2023",
-      description: "Full-time employment as Senior Fullstack Developer (2022-2023)",
+      title: "Project Completion Certificate - First Ocean Est.",
+      type: "business",
+      issuer: "City Solutions Company",
+      date: "December 2023",
+      description: "Certificate of Successful Completion for the Delivery of a Responsive Business Website with Backend, Executed as per Client Requirements, for First Ocean Est.",
       verified: true,
+    file: "/certificates/city.pdf", 
     },
     {
       id: 5,
-      title: "MongoDB Certified Developer",
-      type: "technical",
-      issuer: "MongoDB University",
-      date: "July 2023",
-      description: "Advanced database design and development certification",
+      title: "Project Completion Certificate - Jannat Travels and Tourism",
+      type: "business",
+      issuer: "Jannat Travels and Tourism",
+      date: "Febuary 2026",
+      description: "Developed a Business Website for Jannat Travels and Tourism, Enabling Customers to Contact the Team Easily and Explore Featured Travel Packages Hosted on the Website.",
       verified: true,
+    file: "/certificates/jannat.pdf", 
     },
     {
       id: 6,
-      title: "Project Excellence Award - Riyadh Medical Center",
-      type: "project",
-      issuer: "Riyadh Medical Services",
-      date: "June 2023",
-      description: "Recognition for outstanding performance in healthcare portal development",
+      title: "Project Completion Certificate - Vertex Builders and Company",
+      type: "Contracting",
+      issuer: "Vertex Builders Company",
+      date: "November 2025",
+      description: "Developed a Business Website for Vertex Builders Company to Highlight Contracting Services, Projects, and Client Enquiries.",
       verified: true,
+    file: "/certificates/vertex.pdf", 
     },
   ];
 
@@ -92,9 +98,9 @@ const Certificates = () => {
 
   const stats = [
     { label: t("certificates.totalCertificates"), value: "12+", icon: Award },
-    { label: t("certificates.technicalCerts"), value: "5", icon: CheckCircle },
-    { label: t("certificates.projectCompletions"), value: "4", icon: FileText },
-    { label: t("certificates.yearsValidated"), value: "5+", icon: Award },
+    { label: t("certificates.technicalCerts"), value: "8+", icon: CheckCircle },
+    { label: t("certificates.projectCompletions"), value: "6+", icon: FileText },
+    { label: t("certificates.yearsValidated"), value: "3+", icon: Award },
   ];
 
   return (
@@ -145,10 +151,14 @@ const Certificates = () => {
                       <p className="text-sm text-muted-foreground mb-1 font-medium">{cert.issuer}</p>
                       <p className="text-sm text-muted-foreground mb-3">{cert.date}</p>
                       <p className="text-sm mb-4">{cert.description}</p>
-                      <Button size="sm" variant="outline" className="w-full">
-                        <Download className="w-4 h-4 me-2" />
-                        {t("certificates.downloadPDF")}
-                      </Button>
+                      <a href={cert.file} download className="w-full">
+  <Button size="sm" variant="outline" className="w-full">
+    <Download className="w-4 h-4 me-2" />
+    {t("certificates.downloadPDF")}
+  </Button>
+</a>
+
+
                     </div>
                   </div>
                 </Card>

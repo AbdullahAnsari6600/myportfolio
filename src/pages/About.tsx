@@ -53,6 +53,19 @@ const About = () => {
       ],
     },
   ];
+  const careerInfo = [
+    {
+      icon: Briefcase,
+      label: "Projects",
+      value: "50+ Completed Projects",
+    },
+    {
+      icon: Calendar,
+      label: "Experience",
+      value: "3+ Years Professional Experience",
+    },
+  ];
+  
 
   const softSkills = [
     {
@@ -95,22 +108,52 @@ const About = () => {
           </div>
 
           {/* Personal Information Card */}
-          <Card className="p-8 md:p-12 mb-16 animate-fade-in bg-gradient-card">
-            <h2 className="text-3xl font-bold mb-8">{t("about.personalInfo.title")}</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {personalInfo.map((info, idx) => (
-                <div key={idx} className="flex items-start space-x-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <info.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
-                    <p className="font-semibold">{info.value}</p>
-                  </div>
-                </div>
-              ))}
+          
+          
+          <Card className="p-6 sm:p-8 md:p-12 mb-16 animate-fade-in bg-gradient-card">
+  <h2 className="text-3xl font-bold mb-8">
+    {t("about.personalInfo.title")}
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-[400px_1fr] gap-6 sm:gap-8 md:gap-2 items-start">
+    
+    {/* Profile Image */}
+    <div className="flex justify-center md:justify-start">
+      <div className="w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[28rem] rounded-3xl overflow-hidden border shadow-lg bg-white">
+        <img
+          src="/abdullah1.png"
+          alt="Abdullah Ashraf Ansari"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    {/* Right Content */}
+    <div className="grid gap-6 sm:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        {[...personalInfo, ...careerInfo].map((info, idx) => (
+          <div
+            key={idx}
+            className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-muted/40"
+          >
+            <div className="p-2 sm:p-3 rounded-lg bg-primary/10 shrink-0">
+              <info.icon className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
             </div>
-          </Card>
+            <div>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-1">
+                {info.label}
+              </p>
+              <p className="font-semibold leading-snug text-sm sm:text-base">{info.value}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</Card>
+
+
 
           {/* Professional Background */}
           <Card className="p-8 md:p-12 mb-16 animate-fade-in">

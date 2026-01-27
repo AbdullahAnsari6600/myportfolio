@@ -83,11 +83,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>abdullah@example.com</span>
+                <span>abdullah.ashraf6600@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+966 XXX XXX XXX</span>
+                <span>+91 81212 16768</span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -99,11 +99,12 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">
-              © {currentYear} Abdullah Ashraf Ansari. {t("footer.rights")}
-            </p>
-            <div className="flex items-center space-x-4">
+  <div className="flex justify-center items-center">
+    <p className="text-sm text-muted-foreground text-center">
+      © {currentYear} Abdullah Ashraf Ansari. {t("footer.rights")}
+    </p>
+
+            {/* <div className="flex items-center space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -116,7 +117,7 @@ const Footer = () => {
                   <social.icon className="w-4 h-4" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

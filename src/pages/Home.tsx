@@ -31,9 +31,9 @@ const Home = () => {
 
   const stats = [
     { icon: Briefcase, label: t("stats.projectsCompleted"), value: "50+" },
-    { icon: Users, label: t("stats.happyClients"), value: "35+" },
+    { icon: Users, label: t("stats.happyClients"), value: "10+" },
     { icon: Award, label: t("stats.certifications"), value: "12+" },
-    { icon: Code2, label: t("stats.yearsExperience"), value: "5+" },
+    { icon: Code2, label: t("stats.yearsExperience"), value: "3+" },
   ];
 
   const highlights = [
@@ -53,6 +53,25 @@ const Home = () => {
       icon: "🤝",
     },
   ];
+  const companies = [
+    {
+      name: "First Operations Est.",
+      year: "2024",
+      logo: "/company1.png",
+    },
+    {
+      name: "Advanced Reforms Company",
+      year: "2025",
+      logo: "/company2.png",
+    },
+    {
+      name: "Jannat Travels and Tourism",
+      year: "2026",
+      logo: "/company3.png",
+    },
+  ];
+  
+  
 
   const reviews = [
     {
@@ -119,7 +138,7 @@ const Home = () => {
               <span className="text-sm font-medium text-white">{t("hero.available")}</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               {t("hero.name")}
             </h1>
 
@@ -306,15 +325,33 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-10">
-            {[1, 2, 3].map((_, index) => (
-              <Card key={index} className="p-6 hover-lift animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Award className="w-16 h-16 text-primary/50" />
-                </div>
-                <p className="font-medium text-center">Company Name • 2024</p>
-              </Card>
-            ))}
-          </div>
+  {companies.map((company, index) => (
+    <Card
+      key={index}
+      className="p-6 hover-lift animate-scale-in"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      {/* Logo Container */}
+      <div className="aspect-[4/3] bg-white rounded-lg flex items-center justify-center mb-4 p-4 border">
+        <img
+          src={company.logo}
+          alt={company.name}
+          className="max-h-40 object-contain hover:grayscale-0 transition"
+        />
+      </div>
+
+      {/* Company Name */}
+      <p className="font-medium text-center">
+        {company.name}
+        <span className="block text-sm text-muted-foreground">
+          {company.year}
+        </span>
+      </p>
+    </Card>
+  ))}
+</div>
+
+
 
           <div className="text-center">
             <Link to="/certificates">
@@ -399,7 +436,7 @@ const Home = () => {
               </Card>
             </div>
 
-            <div className="relative animate-scale-in">
+            {/* <div className="relative animate-scale-in">
               <Card className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5">
                 <div className="grid grid-cols-2 gap-6">
                   {[Wrench, Shield, Code2, HeartHandshake].map((Icon, index) => (
@@ -409,7 +446,29 @@ const Home = () => {
                   ))}
                 </div>
               </Card>
-            </div>
+            </div> */}
+            <div className="grid grid-cols-2 gap-6 animate-scale-in">
+  {[
+    { icon: Wrench, label: "Maintenance" },
+    { icon: Shield, label: "Security" },
+    { icon: Code2, label: "Development" },
+    { icon: HeartHandshake, label: "Support" },
+  ].map(({ icon: Icon, label }, index) => (
+    <Card
+      key={index}
+      className="group p-6 text-center transition hover-lift"
+    >
+      {/* Icon */}
+      <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-xl bg-primary/10">
+        <Icon className="w-8 h-8 text-primary" />
+      </div>
+
+      {/* Label */}
+      <p className="text-sm font-medium">{label}</p>
+    </Card>
+  ))}
+</div>
+
           </div>
         </div>
       </section>

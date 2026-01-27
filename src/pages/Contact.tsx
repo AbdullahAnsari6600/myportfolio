@@ -40,19 +40,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: t("contact.email"),
-      value: "abdullah@example.com",
-      link: "mailto:abdullah@example.com",
+      value: "abdullah.ashraf6600@gmail.com",
+      link: "mailto:abdullah.ashraf6600@gmail.com",
     },
     {
       icon: Phone,
       label: t("contact.phone"),
-      value: "+966 XXX XXX XXX",
-      link: "tel:+966XXXXXXXXX",
+      value: "+91 81212 16768",
+      link: "tel:+918121216768",
     },
     {
       icon: MapPin,
       label: t("contact.location"),
-      value: "Saudi Arabia, GCC",
+      value: "Saudi Arabia, INDIA",
       link: "#",
     },
   ];
@@ -110,7 +110,7 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-8">
+              {/* <Card className="p-8">
                 <h3 className="text-xl font-bold mb-6">{t("contact.connectWithMe")}</h3>
                 <div className="flex flex-col space-y-3">
                   {socialLinks.map((social, idx) => (
@@ -126,7 +126,7 @@ const Contact = () => {
                     </a>
                   ))}
                 </div>
-              </Card>
+              </Card> */}
 
               <Card className="p-8 bg-secondary/10 border-secondary/20">
                 <h3 className="text-xl font-bold mb-3 flex items-center">
@@ -136,6 +136,16 @@ const Contact = () => {
                 <p className="text-sm text-muted-foreground">
                   {t("contact.availableNote")}
                 </p>
+                <div className="mt-4 grid sm:grid-cols-2 gap-4">
+  <Card className="p-4">
+    <div className="text-2xl font-bold text-primary mb-1">24-48h</div>
+    <div className="text-xs text-muted-foreground">{t("contact.responseTime")}</div>
+  </Card>
+  <Card className="p-4">
+    <div className="text-2xl font-bold text-secondary mb-1">100%</div>
+    <div className="text-xs text-muted-foreground">{t("contact.satisfactionRate")}</div>
+  </Card>
+</div>
               </Card>
             </div>
 
@@ -182,7 +192,7 @@ const Contact = () => {
                       placeholder={t("contact.messagePlaceholder")}
                       value={contactForm.message}
                       onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
-                      className="w-full min-h-[160px]"
+                      className="w-full min-h-[190px]"
                       required
                     />
                   </div>
@@ -194,7 +204,7 @@ const Contact = () => {
                 </form>
               </Card>
 
-              <div className="mt-8 grid sm:grid-cols-2 gap-6">
+              {/* <div className="mt-8 grid sm:grid-cols-2 gap-6">
                 <Card className="p-6">
                   <div className="text-3xl font-bold text-primary mb-2">24-48h</div>
                   <div className="text-sm text-muted-foreground">{t("contact.responseTime")}</div>
@@ -203,7 +213,7 @@ const Contact = () => {
                   <div className="text-3xl font-bold text-secondary mb-2">100%</div>
                   <div className="text-sm text-muted-foreground">{t("contact.satisfactionRate")}</div>
                 </Card>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

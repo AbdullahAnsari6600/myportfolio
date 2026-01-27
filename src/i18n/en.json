@@ -10,8 +10,8 @@
   },
   "hero": {
     "available": "Available for new projects",
-    "name": "Abdullah Ashraf Ansari",
-    "title": "Fullstack / Web Developer",
+    "name": "Prime Web Solutions",
+    "title": "One partner for all your digital needs.",
     "intro": "I help businesses in GCC transform ideas into responsive, scalable, and secure web applications. Experienced in Fullstack development with MERN & modern tech stacks.",
     "viewWork": "View My Work",
     "getInTouch": "Get in Touch"
@@ -52,16 +52,16 @@
         "country": "KSA"
       },
       {
-        "text": "Highly reliable and technically strong. The website performance and structure exceeded our expectations.",
+        "text": "Extremely reliable and technically skilled, Abdullah delivered a website whose performance, structure, and design exceeded our expectations, showing great attention to detail and quality.",
         "role": "Operations Head",
         "company": "Manpower Supply Company",
-        "country": "UAE"
+        "country": "KSA"
       },
       {
-        "text": "Understood our business requirements clearly and translated them into a modern, functional website.",
+        "text": "Understood our business requirements clearly and translated them into a modern, functional website, delivering a seamless user experience, strong performance, and a design that perfectly reflects our brand.",
         "role": "Director",
         "company": "Tour & Travel Agency",
-        "country": "GCC"
+        "country": "KSA"
       }
     ]
   },
@@ -114,7 +114,7 @@
     "title": "Complete Digital &",
     "titleHighlight": "Business Identity Solutions",
     "subtitle": "Not just websites — comprehensive digital and branding identity solutions for your business",
-    "description": "I provide end-to-end digital solutions that help businesses establish a strong online presence and professional brand identity."
+    "description": "We provide end-to-end digital solutions that help businesses establish a strong online presence and professional brand identity."
   },
   "branding": {
     "title": "Business Branding &",
@@ -167,9 +167,9 @@
     "titleHighlight": "Me",
     "subtitle": "Passionate developer with a mission to build digital solutions that make a difference",
     "professionalBackground": "Professional Background",
-    "bio1": "I'm Abdullah Ashraf Ansari, a passionate Fullstack Developer with over 5 years of experience building modern web applications. My journey in software development has been driven by a commitment to excellence and a deep understanding of both technical and business needs.",
+    "bio1": "I'm Abdullah Ashraf Ansari, a passionate Fullstack Developer with over 3 years of experience building modern web applications. My journey in software development has been driven by a commitment to excellence and a deep understanding of both technical and business needs.",
     "bio2": "Based in the GCC region, I've had the privilege of working with diverse clients across Saudi Arabia, UAE, and other Gulf countries. This experience has given me unique insights into regional market dynamics and cultural nuances that are crucial for successful project delivery.",
-    "bio3": "I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and modern web technologies. My approach combines clean code practices, scalable architecture, and user-centric design to create applications that are not just functional, but truly exceptional.",
+    "bio3": "I specialize in full-stack developer, specializing in modern web technologies. My approach combines clean code practices, scalable architecture, and user-centric design to create applications that are not just functional, but truly exceptional.",
     "technicalExpertise": "Technical Expertise",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -202,11 +202,11 @@
       "designation": "Designation",
       "designationValue": "Senior Fullstack Developer",
       "experience": "Experience",
-      "experienceValue": "5+ Years",
+      "experienceValue": "3+ Years",
       "location": "Location",
-      "locationValue": "Saudi Arabia, GCC",
+      "locationValue": "Hyderabad, India",
       "languages": "Languages",
-      "languagesValue": "English, Arabic, Urdu, Hindi",
+      "languagesValue": "English, Urdu, Hindi, Telugu",
       "availability": "Availability",
       "availabilityValue": "Available for Projects"
     }
@@ -216,12 +216,11 @@
     "titleHighlight": "Portfolio",
     "subtitle": "A showcase of successful projects delivered for clients across GCC markets",
     "allProjects": "All Projects",
-    "ecommerce": "E-Commerce",
-    "corporate": "Corporate",
-    "healthcare": "Healthcare",
-    "realEstate": "Real Estate",
-    "logistics": "Logistics",
-    "education": "Education",
+    "construction": "Construction",
+    "contracting": "Contracting",
+    "maintenance": "Maintenance",
+    "travels": "Travels",
+
     "verified": "Verified",
     "viewLive": "View Live"
   },
