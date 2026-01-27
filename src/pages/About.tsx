@@ -121,7 +121,7 @@ const About = () => {
     <div className="flex justify-center md:justify-start">
       <div className="w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[28rem] rounded-3xl overflow-hidden border shadow-lg bg-white">
         <img
-          src="/abdullah1.jpg"
+          src="/abdullah11.jpg"
           alt="Abdullah Ashraf Ansari"
           className="w-full h-full object-cover"
         />
