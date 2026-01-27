@@ -37,10 +37,14 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               {t("footer.description")}
             </p>
-            <Button variant="outline" size="sm">
-              <Download className="w-4 h-4 me-2" />
-              {t("footer.downloadResume")}
-            </Button>
+            <a href="/Abdullah-FlowCV-Resume.pdf" download>
+  <Button variant="outline" size="sm">
+    <Download className="w-4 h-4 me-2" />
+    {t("footer.downloadResume")}
+  </Button>
+</a>
+
+
           </div>
 
           {/* Quick Links */}
@@ -91,7 +95,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Saudi Arabia, GCC</span>
+                <span>Hyderabad, India</span>
               </li>
             </ul>
           </div>

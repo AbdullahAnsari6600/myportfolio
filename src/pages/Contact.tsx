@@ -83,22 +83,26 @@ const Contact = () => {
       <section className="section-padding bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6">
               {t("contact.title")} <span className="text-gradient">{t("contact.titleHighlight")}</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("contact.subtitle")}
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12">
             <div className="lg:col-span-2 space-y-8 animate-fade-in">
-              <Card className="p-8 bg-gradient-card">
+            <Card className="p-5 sm:p-6 md:p-8 bg-gradient-card">
                 <h3 className="text-2xl font-bold mb-6">{t("contact.contactInfo")}</h3>
                 <div className="space-y-6">
                   {contactInfo.map((info, idx) => (
-                    <a key={idx} href={info.link} className="flex items-start space-x-4 group">
-                      <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                    <a
+                    key={idx}
+                    href={info.link}
+                    className="flex items-start gap-3 group break-all sm:break-normal"
+                  >                  
+                      <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors flex-shrink-0">
                         <info.icon className="w-5 h-5 text-primary" />
                       </div>
                       <div>
@@ -128,7 +132,7 @@ const Contact = () => {
                 </div>
               </Card> */}
 
-              <Card className="p-8 bg-secondary/10 border-secondary/20">
+<Card className="p-5 sm:p-6 md:p-8 bg-secondary/10 border-secondary/20">
                 <h3 className="text-xl font-bold mb-3 flex items-center">
                   <span className="w-3 h-3 bg-secondary rounded-full me-2 animate-pulse" />
                   {t("contact.availableForProjects")}
@@ -150,7 +154,7 @@ const Contact = () => {
             </div>
 
             <div className="lg:col-span-3 animate-scale-in">
-              <Card className="p-8">
+            <Card className="p-5 sm:p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-6">{t("contact.sendMessage")}</h3>
                 <form onSubmit={handleContactSubmit} className="space-y-6">
                   <div>
@@ -192,7 +196,7 @@ const Contact = () => {
                       placeholder={t("contact.messagePlaceholder")}
                       value={contactForm.message}
                       onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
-                      className="w-full min-h-[190px]"
+                      className="w-full min-h-[140px] sm:min-h-[190px]"
                       required
                     />
                   </div>

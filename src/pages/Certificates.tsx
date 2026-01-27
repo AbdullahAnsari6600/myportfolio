@@ -135,8 +135,12 @@ const Certificates = () => {
                   className="p-6 hover-lift animate-scale-in"
                   style={{ animationDelay: `${idx * 0.08}s` }}
                 >
-                  <div className="flex items-start space-x-4">
-                    <div className={`p-3 rounded-lg ${getCertColor(cert.type)}`}>
+                  <div className="flex flex-col md:flex-row md:items-start gap-4">
+                  <div
+  className={`p-3 rounded-lg ${getCertColor(cert.type)} 
+  self-start md:self-auto flex-shrink-0`}
+>
+
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">

@@ -83,14 +83,13 @@ const Navbar = () => {
               {currentLanguage === "en" ? "العربية" : "English"}
             </Button>
 
-            <a
-              href="/cv.pdf"
-              download
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg shadow-elegant bg-primary text-white hover:bg-primary/90 transition-colors"
-            >
-              <Download className="w-4 h-4" />
-              {t("nav.downloadCV")}
-            </a>
+            <a href="/Abdullah-FlowCV-Resume.pdf" download>
+  <Button size="sm" className="flex items-center gap-2">
+    <Download className="w-4 h-4" />
+    {t("nav.downloadCV")}
+  </Button>
+</a>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -125,14 +124,13 @@ const Navbar = () => {
               ))}
 
               {/* Download CV button */}
-              <a
-                href="/cv.pdf"
-                download
-                className="flex items-center gap-2 w-full justify-center px-4 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                {t("nav.downloadCV")}
-              </a>
+              <a href="/Abdullah-FlowCV-Resume.pdf" download className="w-full">
+  <Button className="w-full flex items-center gap-2">
+    <Download className="w-4 h-4" />
+    {t("nav.downloadCV")}
+  </Button>
+</a>
+
 
               {/* Mobile language toggle button */}
               <button
