@@ -18,9 +18,9 @@ const Contact = () => {
     message: "",
   });
 
-  const handleContactSubmit = (e: React.FormEvent) => {
+  const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     if (!contactForm.name || !contactForm.email || !contactForm.message) {
       toast({
         title: t("toast.missingInfo"),
@@ -29,14 +29,38 @@ const Contact = () => {
       });
       return;
     }
-
-    toast({
-      title: t("toast.messageSent"),
-      description: t("toast.thankYou"),
-    });
-
-    setContactForm({ name: "", email: "", message: "" });
+  
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(contactForm),
+      });
+      
+      const data = await res.json();
+      
+      if (!res.ok) {
+        throw new Error(data?.message || "Failed to send message");
+      }
+      
+  
+      if (!res.ok) throw new Error("Failed");
+  
+      toast({
+        title: t("toast.messageSent"),
+        description: t("toast.thankYou"),
+      });
+  
+      setContactForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Try again later.",
+        variant: "destructive",
+      });
+    }
   };
+  
 
   const contactInfo = [
     {
