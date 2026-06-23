@@ -138,7 +138,15 @@ const Contact = () => {
           </div>
           <div>
             <div className="text-sm text-muted-foreground">{info.label}</div>
-            <div className="font-medium group-hover:text-primary">{info.value}</div>
+            <div className="font-medium group-hover:text-primary">
+  {info.icon === Phone ? (
+    <span dir="ltr" style={{ unicodeBidi: "isolate" }}>
+      {info.value}
+    </span>
+  ) : (
+    info.value
+  )}
+</div>
           </div>
         </a>
       ))}
