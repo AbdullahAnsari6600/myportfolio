@@ -31,7 +31,7 @@ const Home = () => {
 
   const stats = [
     { icon: Briefcase, label: t("stats.projectsCompleted"), value: "50+" },
-    { icon: Users, label: t("stats.happyClients"), value: "10+" },
+    { icon: Users, label: t("stats.happyClients"), value: "16+" },
     { icon: Award, label: t("stats.certifications"), value: "12+" },
     { icon: Code2, label: t("stats.yearsExperience"), value: "3+" },
   ];
@@ -55,9 +55,9 @@ const Home = () => {
   ];
   const companies = [
     {
-      name: "First Operations Est.",
-      year: "2024",
-      logo: "/company1.png",
+      name: "Bemassive PT Studio",
+      year: "2026",
+      logo: "/company3.png",
     },
     {
       name: "Advanced Reforms Company",
@@ -65,9 +65,9 @@ const Home = () => {
       logo: "/company2.png",
     },
     {
-      name: "Jannat Travels and Tourism",
-      year: "2026",
-      logo: "/company3.png",
+      name: "First Operations Est.",
+      year: "2024",
+      logo: "/company1.png",
     },
   ];
   

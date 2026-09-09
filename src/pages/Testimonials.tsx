@@ -73,6 +73,17 @@ const Testimonials = () => {
       rating: 5,
       initials: "OS",
     },
+    {
+      id: 7,
+      name: "Asraar Uddin",
+      position: "CEO",
+      company: "Bemassive PT Studio",
+      location: "India",
+      testimonial:
+        "Abdullah transformed our vision into a complete digital ecosystem for Bemassive PT Studio. From a premium public website to a powerful CRM with Admin and Coach dashboards, client progress tracking, membership management, and workout session management, his work has streamlined our daily operations and elevated our client experience. A highly skilled and dependable developer.",
+      rating: 5,
+      initials: "AU",
+    },
   ];
 
   const stats = [

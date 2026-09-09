@@ -68,6 +68,17 @@ const Certificates = () => {
       verified: true,
     file: "/certificates/vertex.pdf", 
     },
+    {
+      id: 8,
+      title: "Project Completion Certificate – Bemassive PT Studio",
+      type: "Full-Stack CRM Development",
+      issuer: "Bemassive PT Studio",
+      date: "September 2026",
+      description:
+        "Awarded for successfully designing and developing a complete full-stack CRM platform for Bemassive PT Studio, including a public website, Admin and Coach dashboards, role-based authentication, client management, membership management, workout session tracking, progress monitoring, and appointment scheduling.",
+      verified: true,
+      file: "/certificates/bemassive.pdf",
+    }
   ];
 
   const getCertIcon = (type: string) => {
@@ -99,7 +110,7 @@ const Certificates = () => {
   const stats = [
     { label: t("certificates.totalCertificates"), value: "12+", icon: Award },
     { label: t("certificates.technicalCerts"), value: "8+", icon: CheckCircle },
-    { label: t("certificates.projectCompletions"), value: "6+", icon: FileText },
+    { label: t("certificates.projectCompletions"), value: "7+", icon: FileText },
     { label: t("certificates.yearsValidated"), value: "3+", icon: Award },
   ];
 
@@ -155,13 +166,39 @@ const Certificates = () => {
                       <p className="text-sm text-muted-foreground mb-1 font-medium">{cert.issuer}</p>
                       <p className="text-sm text-muted-foreground mb-3">{cert.date}</p>
                       <p className="text-sm mb-4">{cert.description}</p>
-                      <a href={cert.file} download className="w-full">
+                      {/* <a href={cert.file} download className="w-full">
   <Button size="sm" variant="outline" className="w-full">
     <Download className="w-4 h-4 me-2" />
     {t("certificates.downloadPDF")}
   </Button>
-</a>
+</a> */}
 
+<div className="flex flex-col sm:flex-row gap-2 w-full">
+  {/* View Certificate */}
+  <a
+    href={cert.file}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1"
+  >
+    <Button size="sm" variant="outline" className="w-full">
+      <FileText className="w-4 h-4 me-2" />
+      View Certificate
+    </Button>
+  </a>
+
+  {/* Download PDF */}
+  <a
+    href={cert.file}
+    download
+    className="flex-1"
+  >
+    <Button size="sm" variant="outline" className="w-full">
+      <Download className="w-4 h-4 me-2" />
+      {t("certificates.downloadPDF")}
+    </Button>
+  </a>
+</div>
 
                     </div>
                   </div>

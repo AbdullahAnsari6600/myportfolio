@@ -88,6 +88,28 @@ const Portfolio = () => {
       link: "https://www.flowltd-ksa.com",
       image: "/6.jpg",
     },
+    {
+      id: 7,
+      title: "Personal Training CRM Platform",
+      category: "CRM",
+      company: "Bemassive PT Studio",
+      description:
+        "Designed and developed a complete full-stack CRM platform for a personal training studio, including a public-facing website, role-based Admin and Coach dashboards, client management, workout session tracking, progress monitoring, membership management, and appointment scheduling.",
+      technologies: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "SQL",
+        "HTML",
+        "CSS"
+      ],
+      impact: "Digitized client management and streamlined daily operations with centralized progress tracking and role-based access.",
+      verified: true,
+      link: "https://www.bemassiveptstudio.com",
+      image: "7.png"
+    }
   ];
 
   const categories = [
